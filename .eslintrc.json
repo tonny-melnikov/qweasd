@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "amd": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:vue/essential"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+
+  "rules": {
+    "quote-props": 0,
+    "no-console": 0,
+    "no-debugger": 0,
+    "indent": ["error", 2, { "ImportDeclaration": "off" }],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ]
+  }
+}
